@@ -1,0 +1,68 @@
+.card__header {
+    grid-area: header;
+    display: flex;
+    gap: 2rem;
+    @include breakpoint(max, 1023px) {
+        flex-direction: column;
+    }
+}
+
+.header__intro, .header__reviews {
+    width: 50%;
+    @include breakpoint(max, 1023px) {
+        width: 100%;
+    }
+}
+
+.header__intro {
+    @include breakpoint(max, 1023px) {
+        text-align: center;
+    }
+    .header__heading {
+        font-size: 2.7rem;
+        line-height: 1.1;
+        margin: {
+            top: 5px;
+            bottom: 10px;
+        };
+    }
+}
+
+.header__reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    @at-root .review__box {
+        width: 87%;
+        padding: 1rem 2rem 1rem 1rem;
+        @include b-radius(0.5rem, 0.5rem, 0.5rem, 0.5rem);
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        background-color: $neutral-light-magenta;
+        @include breakpoint(max, 1023px) {
+            align-self: center !important;
+            width: 100%;
+            max-width: 40rem;
+        }
+        @include breakpoint(max, 767px) {
+            max-width: 29rem;
+        }
+    }
+
+}
+
+.review__box--center {
+    align-self: center;
+}
+
+.review__box--end {
+    align-self: end;
+}
+
+.review__heading {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+

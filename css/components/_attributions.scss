@@ -1,0 +1,16 @@
+.footer__attribution {
+    @include breakpoint(max, 767px) {
+        margin: {
+            top: 15%;
+            bottom: 1rem;
+        };
+    } 
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    a {
+        font-weight: lighter;
+        color: $primary-magenta;
+        letter-spacing: 2px;
+    }
+}

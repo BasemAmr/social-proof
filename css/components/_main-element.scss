@@ -1,0 +1,6 @@
+.card {
+    display: grid;
+    grid-template-areas: "header"
+                         "testemonials";
+    gap: 5rem;
+}

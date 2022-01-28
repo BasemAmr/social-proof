@@ -1,0 +1,49 @@
+// Google Font
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root {
+    font-size: 100% - (100 - (15 / 16) * 100);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    background: left top url(../images/bg-pattern-top-desktop.svg) no-repeat,
+                right -5% url(../images/bg-pattern-bottom-desktop.svg) no-repeat;
+    @include breakpoint(max, 1023px) {
+        background: left top url(../images/bg-pattern-top-mobile.svg) no-repeat,
+                right -5% url(../images/bg-pattern-bottom-mobile.svg) no-repeat;
+    }
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.header__paragraph {
+    color: $neutral-dark-magenta;
+}
+
+.header__heading, .review__heading {
+    color: $primary-magenta;
+}
+
+.customer__name, .customer__testemonial {
+    color: white;
+}
+
+.customer__verified {
+    color: $primary-pink;
+}
