@@ -19,6 +19,9 @@ body {
         background: left top url(../images/bg-pattern-top-mobile.svg) no-repeat,
                 right -5% url(../images/bg-pattern-bottom-mobile.svg) no-repeat;
     }
+    @include breakpoint(min, 1024px) {
+        background: left top url(../images/bg-pattern-top-desktop.svg) no-repeat, right 15vh / 85% url(../images/bg-pattern-bottom-desktop.svg) no-repeat;
+    }
 }
 
 .sr-only {
