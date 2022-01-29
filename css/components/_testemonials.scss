@@ -19,16 +19,16 @@
     overflow: hidden;
     background-color: $primary-magenta;
     @include b-radius(0.5rem, 0.5rem, 0.5rem, 0.5rem);
-    @include breakpoint(min, 1200px) {
-        max-width: 35rem;
-        height: 13rem;
-    }
     @include breakpoint(max, 1023px) {
         width: 100%;
         align-self: center;
     }
     @include breakpoint(min, 768px) {
         max-width: 41.43rem;
+    }
+    @include breakpoint(min, 1200px) {
+        max-width: 21.43rem;
+        height: 13rem;
     }
 }
 

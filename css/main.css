@@ -57,16 +57,18 @@ body {
 .card__header {
   grid-area: header;
   display: flex;
+  justify-content: space-evenly;
   gap: 2rem; }
   @media (max-width: 1023px) {
     .card__header {
       flex-direction: column; } }
 
 .header__intro, .header__reviews {
-  width: 50%; }
+  max-width: 30rem; }
   @media (max-width: 1023px) {
     .header__intro, .header__reviews {
-      width: 100%; } }
+      width: 100%;
+      max-width: none; } }
 
 @media (max-width: 1023px) {
   .header__intro {
@@ -81,8 +83,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem; }
+  @media (min-width: 1024px) {
+    .header__reviews {
+      width: 44rem;
+      max-width: none; } }
   .review__box {
     width: 87%;
+    max-width: 24.4rem;
     padding: 1rem 2rem 1rem 1rem;
     border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
     -webkit-border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
@@ -136,10 +143,6 @@ body {
   -moz-border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
   -ms-border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
   -o-border-radius: 0.5rem 0.5rem 0.5rem 0.5rem; }
-  @media (min-width: 1200px) {
-    .testemonials__box {
-      max-width: 35rem;
-      height: 13rem; } }
   @media (max-width: 1023px) {
     .testemonials__box {
       width: 100%;
@@ -147,6 +150,10 @@ body {
   @media (min-width: 768px) {
     .testemonials__box {
       max-width: 41.43rem; } }
+  @media (min-width: 1200px) {
+    .testemonials__box {
+      max-width: 21.43rem;
+      height: 13rem; } }
 
 @media (min-width: 1024px) {
   .testemonials__box--center {
